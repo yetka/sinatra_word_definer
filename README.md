@@ -9,16 +9,20 @@ The concept for the website is to make learning fun: children will write up a li
 
 ## Specifications
 
-* Program returns the list inputed words
+* Program returns the list of inputed words from list page
   * Example Input: "neuron"
   * Example Output: "neuron"
 
-* Program processes the user click on the word from the list and returns the page with definitions
+* Program processes the user click on the word from the list and returns the page with this word
   * Example Input: click on link "neuron"
   * Example Output: "neuron"
 
-* Program processes the user click on link "Go back to the list of words!" and returns to the list
+* Program processes the user click on link "Go back to the list of words!" and returns to the list page
   * Example Input: click on link "Go back to the list of words!"
+  * Example Output: "The Word Definer"
+
+Program processes the user input from definition page and returns to the list page
+  * Example Input: "a cell that is specialized to conduct nerve impulses"
   * Example Output: "The Word Definer"
 
 ## Setup/Installation Requirements
