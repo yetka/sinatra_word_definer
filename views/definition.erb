@@ -1,7 +1,5 @@
 <h2><%= @word.name() %></h2>
-<% if @word.definition.any? %>
-<h4>Word Definition: <%= @word.definition[0].word_definition %></h4>
-<% end %>
+<h2><%= @word.definition() %></h2>
 
 
 <form action="/word/<%= @word.id %>" method="post">

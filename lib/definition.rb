@@ -1,9 +1,9 @@
 class Definition
-  attr_accessor :word_definition
+  attr_accessor :definition
 
 
   def initialize(attributes)
-    @word_definition = attributes.fetch(:word_definition)
+    @definition = attributes.fetch(:definition)
   end
 
 end

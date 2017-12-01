@@ -1,6 +1,7 @@
 class Word
   @@list =[]
   attr_accessor :name
+  attr_accessor :definition
   attr_reader :id
 
   def initialize(attributes)
