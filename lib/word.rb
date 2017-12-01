@@ -9,4 +9,9 @@ class Word
     @id = @@list.length + 1
   end
 
+  def self.all()
+    @@list
+  end
+
+
 end

@@ -9,5 +9,11 @@ describe("Word") do
       expect(new_word.name()).to(eq("neuron"))
     end
   end
-  
+
+  describe(".all") do
+    it("is empty at first") do
+      expect(Word.all()).to(eq([]))
+    end
+  end
+
 end
