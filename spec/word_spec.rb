@@ -24,4 +24,14 @@ describe("Word") do
     end
   end
 
+  describe(".clear") do
+    it("clears all words from the list") do
+      new_word = Word.new({:name=> "neuron"})
+      new_word.save()
+      Word.clear()
+      expect(Word.all()).to(eq([]))
+    end
+  end
+
+
 end
