@@ -30,4 +30,8 @@ class Word
     end
   end
 
+  def add_definition(definition)
+    @definition.push(definition)
+  end
+
 end
