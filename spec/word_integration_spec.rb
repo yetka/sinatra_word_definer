@@ -18,5 +18,11 @@ describe('the word definder path', {:type => :feature}) do
     click_link('axon')
     expect(page).to have_content('axon')
   end
-  
+
+  it('processes the user click on link and returns to the list') do
+    visit('/word/1')
+    click_link('Go back to the list of words!')
+    expect(page).to have_content('The Word Definer')
+  end
+
 end
