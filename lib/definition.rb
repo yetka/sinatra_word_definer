@@ -11,4 +11,8 @@ class Definition
     @@definition_list
   end
 
+  def save()
+    @@definition_list.push(self)
+  end
+
 end

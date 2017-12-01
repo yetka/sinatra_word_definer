@@ -17,6 +17,14 @@ describe("Definition") do
     end
   end
 
+  describe("#save") do
+    it("saves new definition to the list") do
+      new_definition = Definition.new({:word_definition=> "a cell that is specialized to conduct nerve impulses"})
+      new_definition.save()
+      expect(Definition.all()).to(eq([new_definition]))
+    end
+  end
+
   describe("#add_definition") do
     it("add definition to word") do
       new_word = Word.new({:name=> "neuron"})
