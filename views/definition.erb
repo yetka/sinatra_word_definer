@@ -1,11 +1,12 @@
-<h2><%= @word.name() %></h2>
-<h2><%= @word.definition() %></h2>
+<h1><strong>Your Word: </strong><%= @word.name() %></h1>
+<% if @word.definition.any? %>
+<h3><strong>Your Definition: </strong><%= @word.definition[0].word_definition %></h3>
+<% end %>
 
 
 <form action="/word/<%= @word.id %>" method="post">
-  <h3>Add definition to the word</h3>
   <div class="form-group">
-    <label for="word_definition">Your definition </label>
+    <label for="word_definition">Add Your definition: </label>
     <input id="word_definition" name="word_definition" class="form-control" type="text">
   </div>
   <button type="submit" class="btn">Add!</button>
