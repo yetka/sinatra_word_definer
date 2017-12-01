@@ -35,4 +35,8 @@ class Word
     @definition.push(definition)
   end
 
+  def self.sort()
+    @@list.sort_by{ |word| word.name }
+  end
+
 end

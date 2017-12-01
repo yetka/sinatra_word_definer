@@ -58,5 +58,15 @@ describe("Word") do
     end
   end
 
+  describe(".sort") do
+    it("sort the words alphabetically") do
+      new_word1 = Word.new({:name=> "neuron"})
+      new_word1.save()
+      new_word2 = Word.new({:name=> "cerebellum"})
+      new_word2.save()
+      expect(Word.sort()).to(eq([new_word2,new_word1]))
+    end
+  end
+
 
 end
