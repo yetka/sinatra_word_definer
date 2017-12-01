@@ -9,7 +9,7 @@ The concept for the website is to make learning fun: children will write up a li
 
 ## Specifications
 
-*
+* 
   * Example Input:
   * Example Output:
 
