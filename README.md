@@ -27,7 +27,7 @@ Program processes the user input from definition page and returns to the list pa
 
 ## Setup/Installation Requirements
 
-* Open [link](https://heroku) in your browser.
+* Open [link](https://infinite-meadow-43198.herokuapp.com/) in your browser.
 
 ## Support and contact details
 
