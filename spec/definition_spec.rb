@@ -11,6 +11,12 @@ describe("Definition") do
     end
   end
 
+  describe(".all") do
+    it("is empty at first") do
+      expect(Definition.all()).to(eq([]))
+    end
+  end
+
   describe("#add_definition") do
     it("add definition to word") do
       new_word = Word.new({:name=> "neuron"})
