@@ -21,7 +21,7 @@ The concept for the website is to make learning fun: children will write up a li
   * Example Input: click on link "Go back to the list of words!"
   * Example Output: "The Word Definer"
 
-Program processes the user input from definition page and returns to the list page
+* Program processes the user input from definition page and returns to the list page
   * Example Input: "a cell that is specialized to conduct nerve impulses"
   * Example Output: "The Word Definer"
 
