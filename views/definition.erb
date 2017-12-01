@@ -1,7 +1,15 @@
 <h1><strong>Your Word: </strong><%= @word.name() %></h1>
 <% if @word.definition.any? %>
-<h3><strong>Your Definition: </strong><%= @word.definition[0].word_definition %></h3>
+  <h3><strong>Your Definitions: </strong></h3>
+  <ul>
+  <% @word.definition.each do |definition| %>
+    <h3><li><%= definition.word_definition %></li></h3>
+  <% end %>
+  </ul>
 <% end %>
+
+
+
 
 
 <form action="/word/<%= @word.id %>" method="post">
