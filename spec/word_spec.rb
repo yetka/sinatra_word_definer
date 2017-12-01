@@ -2,6 +2,9 @@ require('rspec')
 require('word')
 
 describe("Word") do
+  before() do
+    Word.clear()
+  end
 
   describe("#name") do
     it("returns the name of the word") do
@@ -41,6 +44,17 @@ describe("Word") do
       new_word2.save()
       expect(new_word1.id()).to(eq(1))
       expect(new_word2.id()).to(eq(2))
+    end
+  end
+
+  describe(".find") do
+    it("finds new word based on its id") do
+      new_word1 = Word.new({:name=> "neuron"})
+      new_word1.save()
+      new_word2 = Word.new({:name=> "cerebellum"})
+      new_word2.save()
+      expect(Word.find(1)).to(eq(new_word1))
+      expect(Word.find(2)).to(eq(new_word2))
     end
   end
 
