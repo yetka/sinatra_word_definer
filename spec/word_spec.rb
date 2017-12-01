@@ -33,5 +33,16 @@ describe("Word") do
     end
   end
 
+  describe("#id") do
+    it("increments an id by 1 each time a new word is added") do
+      new_word1 = Word.new({:name=> "neuron"})
+      new_word1.save()
+      new_word2 = Word.new({:name=> "cerebellum"})
+      new_word2.save()
+      expect(new_word1.id()).to(eq(1))
+      expect(new_word2.id()).to(eq(2))
+    end
+  end
+
 
 end
