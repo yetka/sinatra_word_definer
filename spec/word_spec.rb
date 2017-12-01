@@ -16,4 +16,12 @@ describe("Word") do
     end
   end
 
+  describe("#save") do
+    it("saves new word to the list") do
+      new_word = Word.new({:name=> "neuron"})
+      new_word.save()
+      expect(Word.all()).to(eq([new_word]))
+    end
+  end
+
 end
