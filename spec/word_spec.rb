@@ -68,5 +68,12 @@ describe("Word") do
     end
   end
 
+  describe("#picture") do
+    it("it is empty in the beginning") do
+      new_word = Word.new({:name=> "neuron"})
+      expect(new_word.picture()).to(eq([]))
+    end
+  end
+
 
 end

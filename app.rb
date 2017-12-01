@@ -27,6 +27,8 @@ post('/word/:id') do
   @list = Word.sort()
   @word = Word.find(params[:id])
   word_definition = params["word_definition"]
+  picture = params["picture"]
+  @word.picture.push(picture)
   definition = Definition.new({:word_definition=> word_definition})
   @word.add_definition(definition)
   erb(:list)

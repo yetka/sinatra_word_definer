@@ -8,6 +8,10 @@
   </ul>
 <% end %>
 
+  <img src="<%= @word.picture[0] %>" alt="picture of <%= @word.name %>">
+
+
+
 
 
 
@@ -16,6 +20,10 @@
   <div class="form-group">
     <label for="word_definition">Add Your definition: </label>
     <input id="word_definition" name="word_definition" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="picture">Paste a link to add picture to your word: </label>
+    <input id="picture" name="picture" class="form-control" type="text">
   </div>
   <button type="submit" class="btn">Add!</button>
 </form>
