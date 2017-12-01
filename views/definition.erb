@@ -1,0 +1,16 @@
+<h2><%= @word.name() %></h2>
+<% if @word.definition.any? %>
+<h4>Word Definition: <%= @word.definition[0].word_definition %></h4>
+<% end %>
+
+
+<form action="/word/<%= @word.id %>" method="post">
+  <h3>Add definition to the word</h3>
+  <div class="form-group">
+    <label for="word_definition">Your definition </label>
+    <input id="word_definition" name="word_definition" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Add!</button>
+</form>
+
+<a href="/list">Go back to the list of words!</a>

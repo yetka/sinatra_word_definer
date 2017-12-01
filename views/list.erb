@@ -1,0 +1,16 @@
+<h1>The Word Definer</h1>
+<h2>The concept for this website is to make learning fun!</h2> <h3>You can write up a list of words you don't know (but would like to learn) and then come up with your own definition.</h3>
+
+<% @list.each do |word| %>
+  <h4><a href="/word/<%= word.id %>"><%= word.name %></a></h4>
+<% end %>
+
+<h3>Add new word to the list:</h3>
+
+<form action="/output" method="post">
+  <div class="form-group">
+    <label for="name">Your word</label>
+    <input id="name" name="name" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Add!</button>
+</form>
