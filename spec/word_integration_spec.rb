@@ -25,4 +25,11 @@ describe('the word definder path', {:type => :feature}) do
     expect(page).to have_content('The Word Definer')
   end
 
+  it('processes the user entry and returns the list of words') do
+    visit('/word/1')
+    fill_in('word_definition', :with => 'a cell that is specialized to conduct nerve impulses')
+    click_button('Add!')
+    expect(page).to have_content('The Word Definer')
+  end
+
 end
