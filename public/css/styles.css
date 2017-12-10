@@ -1,0 +1,54 @@
+.jumbotron {
+  text-align: center;
+}
+
+.concept {
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  background-color: #99ccff;
+  text-align: center;
+}
+.instruction {
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  background-color: #ffccff;
+  text-align: center;
+}
+
+.list {
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  background-color: #ffff80;
+  text-align: center;
+}
+
+.adding-form {
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  background-color: #ccff99;
+  text-align: center;
+}
+
+.definitions-list {
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  background-color: #ffff80;
+}
+
+.definition-form {
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  background-color: #ccff99;
+}

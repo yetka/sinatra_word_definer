@@ -1,31 +1,27 @@
-<h1><strong>Your Word: </strong><%= @word.name() %></h1>
-<% if @word.definition.any? %>
-  <h3><strong>Your Definitions: </strong></h3>
-  <ul>
-  <% @word.definition.each do |definition| %>
-    <h3><li><%= definition.word_definition %></li></h3>
+<h1 class="jumbotron">Your Word: <%= @word.name() %></h1>
+<div class="definitions-list">
+  <% if @word.definition.any? %>
+    <h3><strong>Your Definitions: </strong></h3>
+    <ul>
+    <% @word.definition.each do |definition| %>
+      <h3><li><%= definition.word_definition %></li></h3>
+    <% end %>
+    </ul>
   <% end %>
-  </ul>
-<% end %>
-
-  <img src="<%= @word.picture[0] %>" alt="picture of <%= @word.name %>">
-
-
-
-
-
-
-
-<form action="/word/<%= @word.id %>" method="post">
-  <div class="form-group">
-    <label for="word_definition">Add Your definition: </label>
-    <input id="word_definition" name="word_definition" class="form-control" type="text">
-  </div>
-  <div class="form-group">
-    <label for="picture">Paste a link to add picture to your word: </label>
-    <input id="picture" name="picture" class="form-control" type="text">
-  </div>
-  <button type="submit" class="btn">Add!</button>
-</form>
-
+</div>
+<img src="<%= @word.picture[0] %>">
+<div class="definition-form">
+  <form action="/word/<%= @word.id %>" method="post">
+    <div class="form-group">
+      <label for="word_definition">Add Your definition: </label>
+      <input id="word_definition" name="word_definition" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+      <label for="picture">Paste a link to add picture to your word: </label>
+      <input id="picture" name="picture" class="form-control" type="text">
+    </div>
+    <button type="submit" class="btn">Add!</button>
+  </form>
+</div>
+<br>
 <a href="/list">Go back to the list of words!</a>

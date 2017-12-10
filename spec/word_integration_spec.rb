@@ -7,9 +7,9 @@ describe('the word definder path', {:type => :feature}) do
 
   it('processes the user entry and returns the list of words') do
     visit('/')
-    fill_in('name', :with => 'neuron')
+    fill_in('name', :with => 'dupa')
     click_button('Add!')
-    expect(page).to have_content('neuron')
+    expect(page).to have_content('dupa')
   end
 
   it('processes the user click on the word from the list and returns the page with definitions') do
